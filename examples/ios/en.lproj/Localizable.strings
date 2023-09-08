@@ -1,3 +1,22 @@
-"key1"="value1";
-"key2"="value2";
-"key3"="value3";
+"key1" = "value1";
+
+"key2" = "value2";
+"key3" = "value3";
+//注释1
+"key4" = "value4";
+/// 注释2
+"key5" = "value5";
+"key6" = "value6";//注释6
+"key7" = "value7";//注释7；dd
+"key8" = "value8";// 注释8
+//"key9" = "value9"; // key9不应该导出
+"key10" = "value%@10";//包含占位符
+"key11" = "value\"11\"";//包含引号
+"key12" = "value\n12";//包含换行
+"key13" = "value
+13";//包含换行
+"key14" = "value\
+14";//包含换行
+//****************************** 其他样式的注释
+"key15" = "value15";
+
