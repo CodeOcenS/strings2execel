@@ -73,9 +73,16 @@ class StringsFileUtil:
         for x in range(len(list)):
             keyValue = list[x]
             if len(keyValue) > 1:
-                key = keyValue[0].split('\"')[1]
+                keyArray = keyValue[0].split('\"')
+                if len(keyArray) != 3 :
+                    print("\n----------------------")
+                    print("错误：key异常(可能为非目标key):\n" + keyArray[1])
+                    print("完整key数据数组")
+                    print(keyArray)
+                key = keyArray[1]
                 value = keyValue[1][1:]
                 keys.append(key)
                 values.append(value)
 
         return (keys, values)
+
