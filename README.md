@@ -29,15 +29,6 @@ ModuleNotFoundError: No module named ‘xlwt’，需要安装xlwt，执行 `pip
 
 > 注意：转换完成后需要查看日志，如果日志中包含错误提醒，需要手动核对。
 
-## 针对Meross 项目多语言需要处理
-
-以下文案导出 key 部分缺失，导出软件缺陷，需要手动修正
-
-```shell
-"Allow %@ to access your album in \"Settings -> Privacy -> Photos\"" = "Please allow %@ to access your photo in Settings > Privacy > Photos on iPhone.";
-"Please allow %@ to access your camera in \"Settings -> Privacy -> Camera\"" = "Please allow %@ to access your camera in iPhone's Settings > Privacy > Camera";
-```
-
 ## 注意事项
 
 以下情况建议提前搜索 stings 文件检查（使用正则表达式`(=\s{2,})|(=\S)|(\"=)|(\\\".*=)`）。或者导出后手动修复。
