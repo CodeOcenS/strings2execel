@@ -35,6 +35,19 @@ ModuleNotFoundError: No module named ‘xlwt’，需要安装xlwt，执行 `pip
 
 所以建议 string 文件格式最好为`"key" = "value"`.尽量避免 key 中包含引号。
 
+
+
+### Key包含引号
+
+类似以下，导出 key 会有缺失情况，需要手动补充。
+
+```shell
+"Allow %@ to access your album in \"Settings -> Privacy -> Photos\"" = "Please allow %@ to access your photo in Settings > Privacy > Photos on iPhone.";
+"Please allow %@ to access your camera in \"Settings -> Privacy -> Camera\"" = "Please allow %@ to access your camera in iPhone's Settings > Privacy > Camera";
+```
+
+导出的 key 只有`"Allow %@ to access your album in `和`Please allow %@ to access your camera in `
+
 ### 缺少空格
 
 如果多语言中含如下格式：
